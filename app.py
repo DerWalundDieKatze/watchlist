@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from flask import Flask, url_for
 
 app = Flask(__name__)  # 实例引入的flask对象
@@ -26,3 +27,13 @@ def test_url_for():
     # 下面这个调用传入了多余的关键字参数，它们会被作为查询字符串附加到 URL 后面。
     print(url_for('test_url_for', num=2))  # 输出：/test?num=2
     return 'Test page'
+=======
+from flask import Flask
+
+app = Flask(__name__)  # 实例引入的flask对象
+
+
+@app.route('/')             # 使用url装饰器绑定url
+def hello():
+    return 'Welcome to My Watchlist!'
+>>>>>>> 306e865da06abd150bd6b083222ec5950685d780
