@@ -24,9 +24,9 @@ def index():
     return render_template('index.html', name=name, movies=movies)
 
 
-@app.route('/user/<name>')
-def user_page(name):
-    return 'User: %s' % name
+# @app.route('/user/<name>')
+# def user_page(name):
+#     return 'User: %s' % name
 
 
 @app.route('/test')
